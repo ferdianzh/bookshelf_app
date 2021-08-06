@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, sans-serif;
+}
+h2 {
+  color: #1d3829;
+}
+
+header {
+  height: 12vh;
+  text-align: center;
+  align-self: center;
+  color: white;
+  background-color: #2e8b57;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: relative;
+  z-index: 1;
+}
+header h1 {
+  line-height: 12vh;
+}
+
+.button {
+  height: 3em;
+  background-color: #2e8b57;
+  color: white;
+  font-weight: bold;
+  padding: 0.6em 1em;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1em;
+}
+input[type="text"] {
+  border-radius: 1em;
+  border: 2px solid #2e8b57;
+  outline: none;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.main-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.control-container {
+  flex-grow: 1;
+  padding: 20px;
+  border-right: 5px solid #2e8b57;
+  align-self: flex-start;
+  position: sticky;
+  top: 20vh;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+.form-group input[type="text"] {
+  width: auto;
+  height: 3em;
+  margin: 0.2em 0 0.5em 0;
+}
+
+.search-container {
+  display: flex;
+}
+#search-box {
+  flex-basis: 80%;
+  margin-right: 1vw;
+}
+.search-container .button {
+  flex-basis: 20%;
+}
+
+.data-container {
+  flex-grow: 2;
+  padding: 8vh 3vw;
+}
+
+.list-container {
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1em;
+}
+.list-container h2 {
+  margin-bottom: 1.2em;
+}
+.list-item {
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgba(46, 139, 86, 0.5);
+  display: flex;
+}
+.list-item div:first-child {
+  flex-basis: 80%;
+}
+.list-text h3 {
+  margin-bottom: 0.3em;
+}
+.grey-text {
+  color: #8c8b91;
+  font-size: small;
+}
+
+.check-button {
+  background: url("../assets/check-outline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.check-button:hover {
+  background: url("../assets/check-solid.svg");
+  background-size: contain;
+}
+.trash-button {
+  background: url("../assets/trash-outline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+.trash-button:hover {
+  background: url("../assets/trash-fill.svg");
+  background-size: contain;
+}
+.undo-button {
+  background: url("../assets/undo-ouline.svg");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  cursor: pointer;
+  border: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.modal-container {
+  width: 100%;
+  height: 100%;
+  background-color: #474e5dbb;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.modal button {
+  width: 10vw;
+  height: 10vh;
+  margin: 0.2em;
+  align-self: center;
+  font-size: x-large;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+#cancel-button {
+  background-color: #1e1e1f;
+}
+#confirm-button {
+  background-color: brown;
+}
+
+footer {
+  height: 8vh;
+  background-color: #2e8b57;
+  line-height: 8vh;
+  text-align: center;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) -1.95px -1.95px 2.6px;
+  position: relative;
+  z-index: 1;
+}
